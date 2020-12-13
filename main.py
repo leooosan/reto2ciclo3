@@ -4,17 +4,17 @@ import db
 app = FastAPI()
 
 
-@app.get("/ordenes/")
-async def obtener_ordenes():
-    ordenes = db.obtener_ordenes()
-    return ordenes
+@app.get("/reservas/")
+async def obtener_reservas():
+    reservas = db.obtener_reservas()
+    return reservas
 
 
-@app.post("/ordenes/crear/")
-async def crear_orden(orden: db.Orden):
-    creada_exitosamente = db.crear_orden(orden)
+@app.post("/reservas/crear/")
+async def crear_reserva(reserva: db.Reserva):
+    creada_exitosamente = db.crear_reserva(reserva)
     if creada_exitosamente:
-        return {"mensaje": "Orden creada correctamenteo"}
+        return {"mensaje": "Reserva creada correctamente"}
     else:
         raise HTTPException(
-            status_code=400, detail="error, orden con ese id ya exisitia")
+            status_code=400, detail="error, Reserva con ese id ya exisitia")
