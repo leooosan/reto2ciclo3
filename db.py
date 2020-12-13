@@ -15,7 +15,7 @@ class Reserva(BaseModel):
 
 reservas = {
     1: Reserva(id=1, quien_reserva="Leonardo Santos",fecha_entrada="20-11-2020", fecha_salida="18-12-2020",numero_noches=15, tipo_habitacion="doble", numero_personas=2,numero_habitacion=106,precio=285000),
-    2: Reserva(id=2, quien_reserva="Andres Gomez",fecha_entrada="10-12-2020", fecha_salida="14-12-2020",numero_noches=4, tipo_habitacion="sencilla", numero_personas=1,numero_habitacion=109,precio=96000
+    2: Reserva(id=2, quien_reserva="Andres Gomez",fecha_entrada="10-12-2020", fecha_salida="14-12-2020",numero_noches=4, tipo_habitacion="sencilla", numero_personas=1,numero_habitacion=109,precio=96000)
 }
 
 
